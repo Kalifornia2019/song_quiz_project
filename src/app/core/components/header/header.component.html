@@ -1,0 +1,13 @@
+<div class="header-wrapper">
+  <app-logo-quiz class="logo-left"></app-logo-quiz>
+  <div class="user-info" *ngIf="user$ | async as user" class="header">
+    <ng-container>
+      <p>{{ user.name | uppercase }}</p>
+      <span> Your Score: {{ scoreUser }}</span>
+    </ng-container>
+    <!-- <ng-template *ngIf="user.name === ''">
+      <p>{{ (userLocalStorage.name) | uppercase }}</p>
+      <span> Your Score: {{ userLocalStorage.score }}</span>
+    </ng-template> -->
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div
+*ngFor="let item of task; let index = index"
+>
+<div *ngIf="genreActive === index">
+  <div>
+    <h1  class="Genre-name">{{item.genre}} song</h1>
+    <p>Listen to the audio guess what song is it from the list</p>
+  </div>
+  <div *ngFor="let song of item.data; let i = index">
+    <div *ngIf="i === random" >
+      <div class="task-player-wrapper">
+        <div class="player-image-wrapper" (click)="play()" attr.data-after="{{icon}}">
+           <img *ngIf="finalAnswer" [src]="URL_API+song.image" alt="">
+        </div>
+        <div class="task-player">
+          <audio hidden controls #audio>
+            <source [src]="URL_API+song.audio" type="audio/mp3">
+              Your browser does not support the audio element.
+          </audio>
+
+          <input type="range" min="0" step="0.01" attr.max="{{duration}}" attr.value="{{time}}"
+            (change)="change(component)" #component >
+          <span class="time">{{timeText}}</span>
+          <span class="total-time">{{durationText}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

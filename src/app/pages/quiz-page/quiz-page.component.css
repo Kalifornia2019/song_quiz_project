@@ -1,0 +1,107 @@
+.game-container{
+  width: 90%;
+  margin: 0 auto;
+  background: #1B1D31;
+  padding: 20px 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  max-width: 1500px;
+}
+
+.game-container .quiz{
+  width: 40%;
+}
+
+.game-container .player{
+  width: 55%;
+  position: relative;
+}
+
+@media (max-width: 1280px) {
+  .game-container{
+    display: block;
+  }
+  .game-container .quiz{
+    width: 100%;
+  }
+  .game-container .player{
+    width: 100%;
+  }
+}
+
+.spinner {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.player-background{
+  width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -5%;
+    right: 5%;
+}
+
+.player-background svg {
+  width: 150%;
+  height: 150%;
+}
+
+.spinner__animation {
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+  border-right: 3px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  border-left: 3px solid rgb(129, 138, 145);
+  animation: loading-spinner 0.5s infinite linear;
+}
+
+.spinner__info {
+  display: block;
+  padding-top: 5px;
+  color: rgb(129, 138, 145);
+  font-size: .9rem;
+}
+
+@keyframes loading-spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.button-wrapper{
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.button-wrapper .button-next{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* .button-next {
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(90deg, #7E55B3 -0.37%, #A769C4 100.37%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 25px;
+  border: none;
+  color: white;
+} */
+
+@media (max-width: 426px) {
+  .game-container{
+    width: 100%;
+  }
+}

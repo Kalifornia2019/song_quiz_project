@@ -1,0 +1,16 @@
+<div class="col-span-2">
+  <div class="progress-nav">
+    <div
+      attr.class="item {{item.nvclass}}"
+      *ngFor="let item of genre; let last = last; let i = index;"
+    >
+        <p
+        >
+          {{ item.genre | uppercase }}
+        </p>
+        <p *ngIf="!last">→</p>
+    </div>
+  </div>
+</div>
+<!-- <div>Genre: {{genre}}</div> -->
+

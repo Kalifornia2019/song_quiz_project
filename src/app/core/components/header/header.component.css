@@ -1,0 +1,25 @@
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  align-items: center;
+  max-width: 1500px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+}
+
+.header p {
+  margin-right: 10px;
+}

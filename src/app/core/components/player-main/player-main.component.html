@@ -1,0 +1,22 @@
+<h2>{{actionSong.name}} - {{actionSong.songTitle}}</h2>
+
+<div class="player-wrapper">
+  <img [src]="URL_API+actionSong.image" alt="">
+  <div class="player">
+
+    <audio hidden controls #audio>
+      <source [src]="URL_API+actionSong.audio" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button class="play" (click)="play()">{{icon}}</button>
+      <div class="navigation">
+        <input type="range" min="0" step="0.01" max="{{duration}}" value="{{time}}" (change)="change(component)" #component>
+          <span class="time">{{timeText}}</span>
+          <span class="total-time">{{durationText}}</span>
+      </div>
+  </div>
+</div>
+<div class="description">
+  {{actionSong.description}}
+</div>

@@ -1,0 +1,13 @@
+<div *ngFor="let item of options; let index = index; let last = last">
+  <ng-container *ngIf="genreActive === index">
+    <div *ngFor="let options of item.data; let i = index"
+        class="quiz-wrapper"
+    >
+      <div class="item"
+        (click)="clickOptions($event, i)"
+      >
+        0{{i+1}}: {{options.name}} - {{options.songTitle}}
+      </div>
+    </div>
+  </ng-container>
+</div>
