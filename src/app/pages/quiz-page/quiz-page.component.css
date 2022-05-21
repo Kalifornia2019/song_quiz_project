@@ -76,7 +76,7 @@
 .button-wrapper{
   width: 90%;
   margin: 0 auto;
-  box-sizing: border-box;
+  max-width: 1500px;
   padding-right: 10px;
 }
 
