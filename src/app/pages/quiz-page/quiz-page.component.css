@@ -85,21 +85,6 @@
   justify-content: flex-end;
 }
 
-/* .button-next {
-  margin: 0 auto;
-  display: block;
-  width: 150px;
-  height: 50px;
-  background: linear-gradient(90deg, #7E55B3 -0.37%, #A769C4 100.37%);
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 25px;
-  border: none;
-  color: white;
-} */
-
 @media (max-width: 426px) {
   .game-container{
     width: 100%;

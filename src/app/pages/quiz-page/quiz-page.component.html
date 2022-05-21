@@ -1,5 +1,6 @@
 <ng-container *ngIf="!(isLoading$ | async); else Loading">
   <ng-container *ngIf="!(error$ | async); else Error">
+    <div class="wrapper">
       <app-header [scoreUser]="score"></app-header>
       <app-header-genre [pass]="passed" [genre]="genres" [activeGenre]="genreActive"></app-header-genre>
       <div class="game-container">
@@ -26,9 +27,9 @@
           <app-player-main *ngIf="activeOptionsSong" [actionSong]="activeOptionsSong" [task]="genres" [genreActive]="genreActive"></app-player-main>
         </div>
       </div>
-
-    <div class="button-wrapper">
-      <app-button-quiz [fullWidth]="true" [disabled]="activeButton" [btnText]="btnNext" class="button-next" (click)="nextOptions()"></app-button-quiz>
+      <div class="button-wrapper">
+        <app-button-quiz [fullWidth]="true" [disabled]="activeButton" [btnText]="btnNext" class="button-next" (click)="nextOptions()"></app-button-quiz>
+      </div>
     </div>
   </ng-container>
 </ng-container>
