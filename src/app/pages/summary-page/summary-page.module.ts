@@ -12,9 +12,8 @@ import { ButtonQuizModule } from 'src/app/shared/components/button-quiz/button-q
     CommonModule,
     SummaryPageRoutingModule,
     LogoQuizModule,
-    ButtonQuizModule
+    ButtonQuizModule,
   ],
   exports: [SummaryPageComponent],
 })
-
 export class SummaryPageModule {}

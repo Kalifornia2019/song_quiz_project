@@ -4,11 +4,7 @@ import { ButtonQuizComponent } from './button-quiz.component';
 
 @NgModule({
   declarations: [ButtonQuizComponent],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    ButtonQuizComponent
-  ]
+  imports: [CommonModule],
+  exports: [ButtonQuizComponent],
 })
-export class ButtonQuizModule { }
+export class ButtonQuizModule {}

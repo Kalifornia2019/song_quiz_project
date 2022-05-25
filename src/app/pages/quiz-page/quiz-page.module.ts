@@ -8,13 +8,7 @@ import { ButtonQuizModule } from 'src/app/shared/components/button-quiz/button-q
 
 @NgModule({
   declarations: [QuizPageComponent],
-  imports: [
-    CommonModule,
-    QuizPageRoutingModule,
-    CoreModule,
-    ButtonQuizModule
-  ],
+  imports: [CommonModule, QuizPageRoutingModule, CoreModule, ButtonQuizModule],
   exports: [QuizPageComponent],
 })
-
 export class QuizPageModule {}

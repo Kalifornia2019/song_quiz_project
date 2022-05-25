@@ -1,27 +1,27 @@
-.player-wrapper img{
+.player-wrapper img {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
 }
 
-.player-wrapper{
-    background: #373B62;
-    border-radius: 5px;
-    margin-bottom: 20px;
+.player-wrapper {
+  background: #373b62;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
-.player-wrapper input{
+.player-wrapper input {
   width: 100%;
 }
 
-.player-wrapper .player{
+.player-wrapper .player {
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.player button{
+.player button {
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -31,15 +31,15 @@
   text-indent: 5px;
 }
 
-.player .navigation{
+.player .navigation {
   width: 90%;
 }
 
-.player-wrapper .total-time{
-  float:right;
+.player-wrapper .total-time {
+  float: right;
 }
 
-.description{
+.description {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -53,7 +53,7 @@
   border-radius: 5px;
 }
 
-.player-image-wrapper::after{
+.player-image-wrapper::after {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -66,6 +66,6 @@
   align-items: center;
   justify-content: space-around;
   line-height: 30px;
-  text-indent: 4px;
+  /* text-indent: 2px; */
   font-family: sans-serif;
 }

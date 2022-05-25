@@ -3,7 +3,7 @@ import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-button-quiz',
   templateUrl: './button-quiz.component.html',
-  styleUrls: ['./button-quiz.component.css']
+  styleUrls: ['./button-quiz.component.css'],
 })
 export class ButtonQuizComponent implements OnInit {
   @Input() disabled = false;
@@ -13,14 +13,11 @@ export class ButtonQuizComponent implements OnInit {
 
   @Output() click = new EventEmitter<void>();
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.disabled)
-  }
+  ngOnInit(): void {}
 
   onClick() {
     this.click.emit();
   }
-
 }

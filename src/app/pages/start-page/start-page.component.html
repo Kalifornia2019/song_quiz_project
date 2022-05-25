@@ -1,15 +1,32 @@
-
 <div class="wrapper">
   <div class="container">
-  <app-logo-quiz class="logo-center"></app-logo-quiz>
+    <app-logo-quiz class="logo-center"></app-logo-quiz>
 
-  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-container">
-    <div>
-      <h2 class="header-text">Welcome!</h2>
-      <label for="name" class="header-label">Please enter your name and let's start our quiz!</label>
-      <input autocomplete="off" formControlName="name" type="text" name="name" placeholder="TYPE YOUR NAME HERE..." class="input-start-page"/>
-      <app-button-quiz class="next-step" [fullWidth]="true" [disabled]="loginForm.invalid" [btnText]="btnStart"></app-button-quiz>
-    </div>
-  </form>
-</div>
+    <form
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()"
+      class="form-container"
+    >
+      <div>
+        <h2 class="header-text">Welcome!</h2>
+        <label for="name" class="header-label"
+          >Please enter your name and let's start our quiz!</label
+        >
+        <input
+          autocomplete="off"
+          formControlName="name"
+          type="text"
+          name="name"
+          placeholder="TYPE YOUR NAME HERE..."
+          class="input-start-page"
+        />
+        <app-button-quiz
+          class="next-step"
+          [fullWidth]="true"
+          [disabled]="loginForm.invalid"
+          [btnText]="btnStart"
+        ></app-button-quiz>
+      </div>
+    </form>
+  </div>
 </div>

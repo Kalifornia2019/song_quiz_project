@@ -18,16 +18,15 @@ export class LoginService {
 
   constructor(private router: Router) {
     const user = JSON.parse(localStorage.getItem('user') || '{}');
-    if(user)
-      this._user$.next(user);
+    if (user) this._user$.next(user);
   }
 
-  startGame( name: string) {
-    console.log(name)
+  startGame(name: string) {
+    console.log(name);
     const user = {
       name,
       score: 0,
-      step: 0
+      step: 0,
     };
 
     this.userLogin = name;
@@ -40,9 +39,7 @@ export class LoginService {
     this.count$.next(count);
   }
 
-  getUserLogin(){
+  getUserLogin() {
     return this.userLogin;
   }
-
-
 }

@@ -6,7 +6,7 @@ import { User } from '../../models';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
   user$ = this.loginService.user$;
@@ -14,10 +14,9 @@ export class HeaderComponent implements OnInit {
 
   @Input() scoreUser: number = 0;
 
-  constructor(public loginService: LoginService) { }
+  constructor(public loginService: LoginService) {}
 
   ngOnInit(): void {
-    this.userLocalStorage =JSON.parse(localStorage.getItem('user') || '{}');
+    this.userLocalStorage = JSON.parse(localStorage.getItem('user') || '{}');
   }
-
 }

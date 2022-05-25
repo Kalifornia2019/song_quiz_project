@@ -4,11 +4,7 @@ import { LogoQuizComponent } from './logo-quiz.component';
 
 @NgModule({
   declarations: [LogoQuizComponent],
-  imports: [
-    CommonModule
-  ],
-  exports: [
-    LogoQuizComponent
-  ]
+  imports: [CommonModule],
+  exports: [LogoQuizComponent],
 })
-export class LogoQuizModule { }
+export class LogoQuizModule {}

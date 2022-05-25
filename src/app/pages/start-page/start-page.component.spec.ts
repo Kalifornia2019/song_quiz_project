@@ -1,25 +1,15 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+// import { StartPageComponent } from "./start-page.component";
+// import { FormBuilder} from '@angular/forms';
+// import { LoginService } from "src/app/core/services/login.service";
+// import { Router } from '@angular/router';
 
-import { StartPageComponent } from './start-page.component';
 
-describe('StartPageComponent', () => {
-  let component: StartPageComponent;
-  let fixture: ComponentFixture<StartPageComponent>;
+// describe("Start page component authorization user", ()=>{
+//   let component: StartPageComponent;
+//   let service: LoginService;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ StartPageComponent ]
-    })
-    .compileComponents();
-  });
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(StartPageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+//   beforeEach(()=>{((
+//     service = new LoginService();
+//     component =new StartPageComponent(new FormBuilder(), FormBuilder, new LoginService(router: Router): LoginService)
+//   })
+// })

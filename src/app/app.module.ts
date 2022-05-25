@@ -5,15 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
-
 import { StartPageModule } from './pages/start-page/start-page.module';
 import { QuizPageModule } from './pages/quiz-page/quiz-page.module';
 import { SummaryPageModule } from './pages/summary-page/summary-page.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
@@ -21,9 +18,9 @@ import { SummaryPageModule } from './pages/summary-page/summary-page.module';
     QuizPageModule,
     SummaryPageModule,
 
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -9,24 +9,21 @@ import { PlayerMainModule } from './components/player-main/player-main.module';
 import { PlayerTaskModule } from './components/player-task/player-task.module';
 
 @NgModule({
-  declarations: [
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     HeaderModule,
     HeaderGenreModule,
     OptionsQuizModule,
     PlayerMainModule,
-    PlayerTaskModule
+    PlayerTaskModule,
   ],
   exports: [
     HeaderModule,
     HeaderGenreModule,
     OptionsQuizModule,
     PlayerMainModule,
-    PlayerTaskModule
+    PlayerTaskModule,
   ],
 })
-export class CoreModule {
-
-}
+export class CoreModule {}

@@ -1,4 +1,4 @@
-.header-wrapper{
+.header-wrapper {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -15,7 +15,7 @@
   width: 250px;
 }
 
-.header{
+.header {
   display: flex;
   align-items: center;
 }

@@ -6,9 +6,7 @@ import { Song } from '../models';
   providedIn: 'root',
 })
 export class ScoreService {
-
   scoreUser: number = 0;
 
   constructor() {}
-
 }

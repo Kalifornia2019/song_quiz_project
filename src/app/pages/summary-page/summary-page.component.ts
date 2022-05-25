@@ -6,21 +6,19 @@ import { User } from 'src/app/core/models';
 @Component({
   selector: 'app-summary-page',
   templateUrl: './summary-page.component.html',
-  styleUrls: ['./summary-page.component.css']
+  styleUrls: ['./summary-page.component.css'],
 })
 export class SummaryPageComponent implements OnInit {
-
-  btnTry: string = "TRY AGAIN";
+  btnTry: string = 'TRY AGAIN';
   userLogin!: User;
 
-  constructor(private router: Router) {
-   }
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.userLogin =JSON.parse(localStorage.getItem('user') || '{}');
+    this.userLogin = JSON.parse(localStorage.getItem('user') || '{}');
   }
 
-  startAgain(){
+  startAgain() {
     this.router.navigate(['/quiz']);
     let userData: User;
     userData = JSON.parse(localStorage.getItem('user') || '{}');
@@ -28,5 +26,4 @@ export class SummaryPageComponent implements OnInit {
     userData.step = 0;
     localStorage.setItem('user', JSON.stringify(userData));
   }
-
 }

@@ -16,9 +16,8 @@ import { LogoQuizModule } from 'src/app/shared/components/logo-quiz/logo-quiz.mo
     ButtonQuizModule,
     LogoQuizModule,
 
-    StartPageRoutingModule
+    StartPageRoutingModule,
   ],
   exports: [StartPageComponent],
 })
-
 export class StartPageModule {}

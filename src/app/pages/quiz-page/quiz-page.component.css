@@ -1,7 +1,7 @@
-.game-container{
+.game-container {
   width: 90%;
   margin: 0 auto;
-  background: #1B1D31;
+  background: #1b1d31;
   padding: 20px 5%;
   box-sizing: border-box;
   display: flex;
@@ -10,23 +10,23 @@
   max-width: 1500px;
 }
 
-.game-container .quiz{
+.game-container .quiz {
   width: 40%;
 }
 
-.game-container .player{
+.game-container .player {
   width: 55%;
   position: relative;
 }
 
 @media (max-width: 1280px) {
-  .game-container{
+  .game-container {
     display: block;
   }
-  .game-container .quiz{
+  .game-container .quiz {
     width: 100%;
   }
-  .game-container .player{
+  .game-container .player {
     width: 100%;
   }
 }
@@ -36,12 +36,12 @@
   margin-top: 200px;
 }
 
-.player-background{
+.player-background {
   width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: -5%;
-    right: 5%;
+  height: 100%;
+  position: absolute;
+  bottom: -5%;
+  right: 5%;
 }
 
 .player-background svg {
@@ -65,28 +65,32 @@
   display: block;
   padding-top: 5px;
   color: rgb(129, 138, 145);
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 @keyframes loading-spinner {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.button-wrapper{
+.button-wrapper {
   width: 90%;
   margin: 0 auto;
   max-width: 1500px;
   padding-right: 10px;
 }
 
-.button-wrapper .button-next{
+.button-wrapper .button-next {
   display: flex;
   justify-content: flex-end;
 }
 
 @media (max-width: 426px) {
-  .game-container{
+  .game-container {
     width: 100%;
   }
 }
